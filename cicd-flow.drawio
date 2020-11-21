@@ -1,4 +1,4 @@
-<mxfile host="65bd71144e" modified="2020-11-21T10:10:27.868Z" agent="5.0 (Macintosh; Intel Mac OS X 10_16_0) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.51.1 Chrome/83.0.4103.122 Electron/9.3.3 Safari/537.36" etag="ZB1L5bLieLR9iaJvHGDp" version="13.6.5">
+<mxfile host="65bd71144e" modified="2020-11-21T18:44:26.500Z" agent="5.0 (Macintosh; Intel Mac OS X 10_16_0) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.51.1 Chrome/83.0.4103.122 Electron/9.3.3 Safari/537.36" etag="ErNFpkhvUezPEMgShtso" version="13.6.5">
     <diagram id="2l1Gih08ljTuTviZnEwU" name="Page-1">
         <mxGraphModel dx="1030" dy="777" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
             <root>
@@ -18,16 +18,16 @@
                         <mxPoint x="990" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="92" value="Tag" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;labelPosition=center;verticalLabelPosition=top;align=center;verticalAlign=bottom;horizontal=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="15" vertex="1">
+                <mxCell id="92" value="Git&lt;br&gt;Tag" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;labelPosition=center;verticalLabelPosition=top;align=center;verticalAlign=bottom;horizontal=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="15" vertex="1">
                     <mxGeometry x="560" y="60" width="22.5" height="22.5" as="geometry"/>
                 </mxCell>
-                <mxCell id="25" value="Commit" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;labelPosition=center;verticalLabelPosition=top;align=center;verticalAlign=bottom;horizontal=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="15" vertex="1">
+                <mxCell id="25" value="Git&lt;br&gt;Commit" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;labelPosition=center;verticalLabelPosition=top;align=center;verticalAlign=bottom;horizontal=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="15" vertex="1">
                     <mxGeometry x="78.75" y="60" width="22.5" height="22.5" as="geometry"/>
                 </mxCell>
                 <mxCell id="16" value="Jenkins" style="swimlane;html=1;startSize=20;horizontal=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="14" vertex="1">
                     <mxGeometry y="140" width="1280" height="120" as="geometry"/>
                 </mxCell>
-                <mxCell id="99" value="- pull image &quot;app:&amp;lt;commit-id&amp;gt;&quot;&lt;br&gt;- tag image &quot;app:&amp;lt;tag&amp;gt;&quot;&lt;br&gt;- push image" style="shape=note;strokeWidth=2;fontSize=12;size=20;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;align=left;" parent="16" vertex="1">
+                <mxCell id="99" value="- pull image &quot;app:&amp;lt;commit-id&amp;gt;&quot;&lt;br&gt;- re-tag image &quot;app:&amp;lt;tag&amp;gt;&quot;&lt;br&gt;- push image" style="shape=note;strokeWidth=2;fontSize=12;size=20;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;align=left;" parent="16" vertex="1">
                     <mxGeometry x="660" y="20" width="200" height="80" as="geometry"/>
                 </mxCell>
                 <mxCell id="26" value="Build Pipeline" style="whiteSpace=wrap;html=1;" parent="16" vertex="1">
@@ -36,8 +36,8 @@
                 <mxCell id="68" value="Tag Pipeline" style="whiteSpace=wrap;html=1;" parent="16" vertex="1">
                     <mxGeometry x="520" y="32.5" width="100" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="96" value="&lt;span&gt;- build app&lt;/span&gt;&lt;br&gt;&lt;span&gt;- test app&lt;/span&gt;&lt;br&gt;&lt;span&gt;- build image&lt;br&gt;&lt;/span&gt;- tag image &quot;&lt;span style=&quot;text-align: center&quot;&gt;app:&amp;lt;commit-id&amp;gt;&quot;&lt;/span&gt;&lt;br&gt;&lt;span&gt;- push image&lt;/span&gt;" style="shape=note;strokeWidth=2;fontSize=12;size=20;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;align=left;" parent="16" vertex="1">
-                    <mxGeometry x="200" y="20" width="170" height="80" as="geometry"/>
+                <mxCell id="96" value="&lt;span&gt;- build app&lt;/span&gt;&lt;br&gt;&lt;span&gt;- test app&lt;/span&gt;&lt;br&gt;&lt;span&gt;- build image&amp;nbsp;&lt;/span&gt;&quot;&lt;span style=&quot;text-align: center&quot;&gt;app:&amp;lt;commit-id&amp;gt;&quot;&lt;/span&gt;&lt;br&gt;&lt;span&gt;- push image&lt;/span&gt;" style="shape=note;strokeWidth=2;fontSize=12;size=20;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;align=left;" parent="16" vertex="1">
+                    <mxGeometry x="200" y="20" width="200" height="80" as="geometry"/>
                 </mxCell>
                 <mxCell id="98" value="" style="endArrow=none;dashed=1;html=1;" parent="16" source="26" target="96" edge="1">
                     <mxGeometry width="50" height="50" relative="1" as="geometry">
@@ -137,7 +137,7 @@
                 <mxCell id="86" value="check updates&lt;br&gt;in ops repo&lt;br&gt;(semver only)" style="whiteSpace=wrap;html=1;" parent="23" vertex="1">
                     <mxGeometry x="1000" y="30" width="120" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="111" value="" style="shape=mxgraph.bpmn.shape;html=1;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;align=center;perimeter=ellipsePerimeter;outlineConnect=0;outline=standard;symbol=timer;" vertex="1" parent="23">
+                <mxCell id="111" value="" style="shape=mxgraph.bpmn.shape;html=1;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;align=center;perimeter=ellipsePerimeter;outlineConnect=0;outline=standard;symbol=timer;" parent="23" vertex="1">
                     <mxGeometry x="990" y="20" width="31" height="30" as="geometry"/>
                 </mxCell>
                 <mxCell id="73" value="check updates&lt;br&gt;in ops repo" style="whiteSpace=wrap;html=1;" parent="23" vertex="1">
@@ -146,7 +146,7 @@
                 <mxCell id="85" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="23" source="86" target="87" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="110" value="" style="shape=mxgraph.bpmn.shape;html=1;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;align=center;perimeter=ellipsePerimeter;outlineConnect=0;outline=standard;symbol=timer;" vertex="1" parent="23">
+                <mxCell id="110" value="" style="shape=mxgraph.bpmn.shape;html=1;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;align=center;perimeter=ellipsePerimeter;outlineConnect=0;outline=standard;symbol=timer;" parent="23" vertex="1">
                     <mxGeometry x="750" y="20" width="31" height="30" as="geometry"/>
                 </mxCell>
                 <mxCell id="87" value="deploy to &lt;br&gt;prod" style="whiteSpace=wrap;html=1;" parent="23" vertex="1">
@@ -182,16 +182,16 @@
                 <mxCell id="81" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="23" source="73" target="72" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="107" value="" style="shape=mxgraph.bpmn.shape;html=1;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;align=center;perimeter=ellipsePerimeter;outlineConnect=0;outline=standard;symbol=timer;" vertex="1" parent="23">
+                <mxCell id="107" value="" style="shape=mxgraph.bpmn.shape;html=1;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;align=center;perimeter=ellipsePerimeter;outlineConnect=0;outline=standard;symbol=timer;" parent="23" vertex="1">
                     <mxGeometry x="30" y="20" width="31" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="108" value="" style="shape=mxgraph.bpmn.shape;html=1;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;align=center;perimeter=ellipsePerimeter;outlineConnect=0;outline=standard;symbol=timer;" vertex="1" parent="23">
+                <mxCell id="108" value="" style="shape=mxgraph.bpmn.shape;html=1;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;align=center;perimeter=ellipsePerimeter;outlineConnect=0;outline=standard;symbol=timer;" parent="23" vertex="1">
                     <mxGeometry x="270" y="20" width="31" height="30" as="geometry"/>
                 </mxCell>
                 <mxCell id="75" value="check new&lt;br&gt;image-tag" style="whiteSpace=wrap;html=1;" parent="23" vertex="1">
                     <mxGeometry x="520" y="30" width="100" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="109" value="" style="shape=mxgraph.bpmn.shape;html=1;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;align=center;perimeter=ellipsePerimeter;outlineConnect=0;outline=standard;symbol=timer;" vertex="1" parent="23">
+                <mxCell id="109" value="" style="shape=mxgraph.bpmn.shape;html=1;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;align=center;perimeter=ellipsePerimeter;outlineConnect=0;outline=standard;symbol=timer;" parent="23" vertex="1">
                     <mxGeometry x="510" y="20" width="31" height="30" as="geometry"/>
                 </mxCell>
                 <mxCell id="24" value="Ops Repo" style="swimlane;html=1;startSize=20;horizontal=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="14" vertex="1">
